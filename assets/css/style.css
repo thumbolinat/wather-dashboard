@@ -1,0 +1,51 @@
+h1 {
+    border-width: 200px;
+    background-image: linear-gradient(to right, #767692 , #0c0c9b);
+ 
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+  }
+ 
+
+  
+  p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .shadow {
+    display: inline-flex;
+    width: 100%;
+    padding: none imporat !important;
+    
+  }
+   
+  .card-text {
+    width: 100% !important;
+  }
+  button {
+    background-color: #d8d6d6 !important;
+  }
+  .btn-primary {
+    
+    width: 100%;
+    margin-top: 10px;
+    background-color: #2d65cc !important;
+  }
+
+  
+  
+  button:hover {
+    background-color: #808080 !important;
+  }
+  
+  .card-one {
+    background-color: #3b4752 !important;
+    color: #ffffff !important;
+  }
+  
+    
+  
+  
