@@ -1,34 +1,3 @@
-var userInput = document.getElementById("city-input");
-var searchButton = document.getElementById("search-button");
-var searchKept = document.getElementById("search-kept");
-var showLocation = document.getElementById("show-location")
-var currSymb = document.getElementById("curr-symb");
-var currTemp = document.getElementById("curr-temp");
-var currHum = document.getElementById("curr-hum");
-var currWind= document.getElementById("curr-wind");
-var compShade = document.getElementById("comp-shade")
-var currUv = document.getElementById("curr-uv");
-
-var doneD = document.getElementById("done-d");
-var doneSymb = document.getElementById("done-symb");
-var doneTemp = document.getElementById("done-temp");
-var doneHum = document.getElementById("done-hum");
-var dtwoD = document.getElementById("dtwo-d");
-var dtwoSymb = document.getElementById("dtwo-symb");
-var dtwoTemp = document.getElementById("dtwo-temp");
-var dtwoHum = document.getElementById("dtwo-hum");
-var dthreeD = document.getElementById("dthree-d");
-var dthreeSymb = document.getElementById("dthree-symb")
-var dthreeTemp = document.getElementById("dthree-temp");
-var dthreeHum = document.getElementById("dthree-hum");
-var dfourD = document.getElementById("dfour-d");
-var dfourSymb = document.getElementById("dfour-symb")
-var dfourTemp = document.getElementById("dfour-temp");
-var dfourHum = document.getElementById("dfour-hum");
-var dfiveD = document.getElementById("dfive-d");
-var dfiveSymb = document.getElementById("dfive-symb")
-var dfiveTemp = document.getElementById("dfive-temp");
-var dfiveHum = document.getElementById("dfive-hum");
 
 
 var locations = [];
@@ -196,7 +165,7 @@ var cityButtons = document.querySelectorAll("button");
                     console.log(response);
                     response.json().then(function (data) {
                         console.log(data);
-                        //display data
+                       
                         var unixCode = data.dt
                         console.log(unixCode)
                         currentDate = new Date(unixCode * 1000).toLocaleDateString("en-US")
@@ -288,6 +257,6 @@ var cityButtons = document.querySelectorAll("button");
 
         })}
 
-//event listener for button
+
 searchButton.addEventListener("click", currentWeather)
 searchButton.addEventListener("click", addToArray)
